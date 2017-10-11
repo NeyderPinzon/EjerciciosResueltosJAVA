@@ -3,7 +3,51 @@ package ejemplowhile;
 import java.util.Scanner;
 
 public class TomarDatos {
-    
+    public static void PrimosDelUnoAlCien(){
+        Integer numeroIngresado=1;
+        while(numeroIngresado<101){
+            
+            numeroIngresado++;
+            Integer contador =2;
+            Integer contadorDiv=0;
+
+            while (contador<numeroIngresado){
+
+                if (numeroIngresado%contador==0){
+                    contadorDiv++;
+                    break;
+                }
+                contador++;
+            }
+            if (contadorDiv>0){
+                //System.out.println("No es Primo");
+            }else{
+                System.out.println("Es Primo el numero: "+numeroIngresado);
+            }
+        }
+    }   
+
+    public static void NumeroPrimo(){
+        
+        
+        Integer numeroIngresado=17;
+        Integer contador =2;
+        Integer contadorDiv=0;
+        
+        while (contador<numeroIngresado){
+            
+            if (numeroIngresado%contador==0){
+                contadorDiv++;
+                break;
+            }
+            contador++;
+        }
+        if (contadorDiv>0){
+            System.out.println("No es Primo");
+        }else{
+            System.out.println("Es Primo");
+        }
+    }
     public static void ContadoresyAcumuladores(){
         Integer contador =0;
         Integer acumulador =0;
@@ -30,11 +74,7 @@ public class TomarDatos {
         System.out.println("la resta: "+restador);
         System.out.println("los pareas: "+contadorPares);
         System.out.println("los divisores de 3 son: "+contadorDiv3); 
-    }
-    
-    
-    
-    
+    } 
     public static void TomarDatosValidados(){
         /**Pide los datos de una persona y valida cada uno
     *daots a pedir:

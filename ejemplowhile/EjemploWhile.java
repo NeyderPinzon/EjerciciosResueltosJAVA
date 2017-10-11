@@ -1,6 +1,8 @@
 package ejemplowhile;
 
 import static ejemplowhile.TomarDatos.ContadoresyAcumuladores;
+import static ejemplowhile.TomarDatos.NumeroPrimo;
+import static ejemplowhile.TomarDatos.PrimosDelUnoAlCien;
 import static ejemplowhile.TomarDatos.TomarDatosValidados;
 
 public class EjemploWhile {
@@ -11,7 +13,9 @@ public class EjemploWhile {
     public static void main(String[] args) {
      
         //TomarDatosValidados();
-        ContadoresyAcumuladores();
+        //ContadoresyAcumuladores();
+        //NumeroPrimo();
+        PrimosDelUnoAlCien();
     }
 }
                 
